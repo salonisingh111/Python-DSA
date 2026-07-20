@@ -1,0 +1,11 @@
+nums = [5, 8, 9, 2, 9, 1, 9]
+target = 9
+
+result=False
+
+for i in range(len(nums)):
+    if nums[i]==target:
+        result= True
+        print(i)
+if result==False:
+    print("Not found")
