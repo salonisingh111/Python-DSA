@@ -1,4 +1,4 @@
-nums = [5, 8,  2, 9, 1]
+nums = [5, 8, 9, 2, 9, 1]
 target = 9
 
 result=False

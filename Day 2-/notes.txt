@@ -1,0 +1,297 @@
+# 📘 DSA with Python - Day 02
+
+# Topic: Linear Search
+
+---
+
+# 📌 What is Searching?
+
+Searching means finding a specific element in a list or array.
+
+Example:
+
+```python
+nums = [5, 8, 2, 9, 1]
+target = 9
+```
+
+Here, we need to check whether **9** is present in the list or not.
+
+---
+
+# 📌 What is Linear Search?
+
+Linear Search is the simplest searching algorithm.
+
+It checks each element one by one from the beginning until:
+
+- The target element is found.
+- OR the list ends.
+
+---
+
+# 📌 How Linear Search Works
+
+Example:
+
+```python
+nums = [5, 8, 2, 9, 1]
+target = 9
+```
+
+Step 1
+
+```
+5 == 9 ❌
+```
+
+Step 2
+
+```
+8 == 9 ❌
+```
+
+Step 3
+
+```
+2 == 9 ❌
+```
+
+Step 4
+
+```
+9 == 9 ✅ Found
+```
+
+Search stops because the target is found.
+
+---
+
+# 📌 Real Life Example
+
+Suppose you are searching your friend's name in an attendance list.
+
+```
+Rahul
+Priya
+Ankit
+Neha
+Rohan
+```
+
+You check every name one by one.
+
+Rahul ❌
+
+Priya ❌
+
+Ankit ❌
+
+Neha ✅
+
+This is exactly how Linear Search works.
+
+---
+
+# 📌 Algorithm
+
+1. Take the target element.
+2. Start from the first element.
+3. Compare the current element with the target.
+4. If both are equal → Found.
+5. Otherwise move to the next element.
+6. Repeat until the list ends.
+7. If the list finishes and the target is not found → Not Found.
+
+---
+
+# 📌 Why do we use `found = False`?
+
+Initially, we assume the target is not present.
+
+```python
+found = False
+```
+
+If the target is found during the loop:
+
+```python
+found = True
+```
+
+This variable helps us know whether the element was found after the loop finishes.
+
+---
+
+# 📌 Flow
+
+```
+Start
+
+↓
+
+found = False
+
+↓
+
+Check every element
+
+↓
+
+Is current element == target ?
+
+↓
+
+Yes → found = True
+
+↓
+
+Stop Search (optional)
+
+↓
+
+No → Check Next Element
+
+↓
+
+Loop Ends
+
+↓
+
+If found == True
+
+Print "Found"
+
+Else
+
+Print "Not Found"
+
+End
+```
+
+---
+
+# 📌 Dry Run
+
+Input
+
+```python
+nums = [5, 8, 2, 9, 1]
+target = 9
+```
+
+| Current Element | Found |
+|-----------------|-------|
+| Start | False |
+| 5 | False |
+| 8 | False |
+| 2 | False |
+| 9 | True |
+
+Output
+
+```
+Found
+```
+
+---
+
+# 📌 Time Complexity
+
+Best Case
+
+```
+O(1)
+```
+
+Worst Case
+
+```
+O(n)
+```
+
+**Note:** We will study Time Complexity in detail later.
+
+---
+
+# 📌 Advantages
+
+- Easy to understand.
+- Easy to implement.
+- Works on sorted and unsorted arrays.
+- No extra memory required.
+
+---
+
+# 📌 Disadvantages
+
+- Slow for large datasets.
+- Checks every element one by one.
+- Less efficient than Binary Search.
+
+---
+
+# 📌 Interview Definition
+
+**Linear Search is a searching algorithm that checks every element one by one until the target element is found or the list ends.**
+
+---
+
+# 📌 Key Points
+
+✅ Checks one element at a time.
+
+✅ Starts from the first element.
+
+✅ Stops when the target is found.
+
+✅ If the target is not found after checking all elements, it returns "Not Found".
+
+✅ Works for both sorted and unsorted arrays.
+
+---
+
+# 📌 Pattern Learned Today
+
+Searching Pattern
+
+```
+Initialize
+
+↓
+
+Traverse the Array
+
+↓
+
+Compare each element
+
+↓
+
+Take Action if matched
+
+↓
+
+Continue until end
+
+↓
+
+Return Result
+```
+
+---
+
+# 📌 Questions Covered
+
+- [ ] Q1 Check if an element exists
+- [ ] Q2 Find index of an element
+- [ ] Q3 Count occurrences
+- [ ] Q4 First occurrence
+- [ ] Q5 Last occurrence
+- [ ] Q6 Find all occurrences
+
+---
+
+# 📌 Revision
+
+Linear Search = Check every element one by one until the target is found or the list ends.
