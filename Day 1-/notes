@@ -1,0 +1,41 @@
+# Day 1 - Array Traversal
+
+## Definition
+Array Traversal means visiting every element of an array exactly once.
+
+## Methods
+
+### Method 1: Traverse by Value
+```python
+for value in nums:
+```
+- Returns the values of the array.
+- Use when you only need the element.
+
+### Method 2: Traverse by Index
+```python
+for i in range(len(nums)):
+```
+- Returns the indexes of the array.
+- Use when you need the index or want to update the array.
+
+## Difference
+
+| By Value | By Index |
+|----------|----------|
+| Returns values | Returns indexes |
+| Cannot directly modify elements | Can access and modify elements using `nums[i]` |
+
+## Time Complexity
+- **Time:** O(n)
+- **Space:** O(1)
+
+## Common Use Cases
+- Print all elements
+- Find sum
+- Find maximum/minimum
+- Count elements
+- Update array values (using index)
+
+## Interview Definition
+**Array Traversal** is the process of visiting every element of an array exactly one time to perform an operation.

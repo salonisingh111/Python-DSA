@@ -1,0 +1,56 @@
+# Day 3 - Array Manipulation
+
+## Definition
+Array Manipulation is the process of modifying the existing elements of an array without creating a new array.
+
+## Operations
+- Update
+- Replace
+- Swap
+- Shift
+- Rotate
+
+## Syntax
+
+### Traverse an Array
+```python
+for i in range(len(nums)):
+```
+
+### Access an Element
+```python
+nums[i]
+```
+
+### Update an Element
+```python
+nums[i] = new_value
+```
+
+### Swap Two Elements
+```python
+nums[a], nums[b] = nums[b], nums[a]
+```
+
+## Algorithm
+1. Traverse the array.
+2. Check the required condition.
+3. Update or swap the element.
+4. Print the modified array.
+
+## Time Complexity
+- **Time:** O(n)
+- **Space:** O(1)
+
+## Common Questions
+- Double all elements
+- Square all elements
+- Replace negative numbers
+- Replace even/odd numbers
+- Swap first & last element
+- Left Shift
+- Right Shift
+- Rotate Array
+
+## Interview Definition
+Array Manipulation is the process of updating, replacing, swapping, shifting, or rotating elements in an array based on the given problem.
